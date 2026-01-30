@@ -1,0 +1,15 @@
+{
+  "name": "project_management_system",
+  "version": "1.0.0",
+  "description": "a system for project management",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "3.8.1"
+  }
+}
