@@ -6,7 +6,7 @@ import { emailVerificationMailgenContent, forgotPasswordMailgenContent, sendEmai
 import jwt from "jsonwebtoken"
 import crypto from "crypto"
 
-const generateAccessAndRefreshTokens = async (userId) => {
+const generateAccessAndRefreshTokens = (async (userId) => {
   try {
     const user = await User.findById(userId);
     const accessToken = await user.generateAccessToken();
@@ -21,7 +21,7 @@ const generateAccessAndRefreshTokens = async (userId) => {
       "Something went wrong while generating access token",
     );
   }
-};
+});
 
 const registerUser = asyncHandler(async (req, res) => {
   const { email, username, password, role } = req.body;
